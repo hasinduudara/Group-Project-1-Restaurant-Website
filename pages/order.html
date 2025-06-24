@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Orders</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .nav-link.active, .btn-primary {
+      background-color: #f4e9f2;
+      color: #3c0d3c;
+      border: none;
+    }
+    .nav-link:hover {
+      color: #8b4d8b;
+    }
+    .logo{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+    }
+    .form-control {
+      border: 1px solid #f4e9f2;
+    }
+    .form-control:focus {
+      border-color: #d8b4dc;
+      box-shadow: none;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg header">
+    <div class="container">
+        <img src="/assets/reviews/resort.png" alt="Logo" class="logo">
+      <a class="navbar-brand fw-bold" href="#">Taste Haven</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-primary mx-2" href="#">Order Online</a>
+            <a class="btn btn-primary mx-2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="btn btn-primary mx-2" href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="mb-4 fw-bold">How to Order</h2>
+
+    <div>
+      <h5 class="fw-semibold">Takeout</h5>
+      <ol>
+        <li>Browse our online menu and select your desired items.</li>
+        <li>Customize your order with any special requests or modifications.</li>
+        <li>Proceed to checkout and provide your contact information.</li>
+        <li>Choose your preferred pickup time.</li>
+        <li>Complete your payment securely online.</li>
+        <li>Pick up your order at the designated time and enjoy!</li>
+      </ol>
+    </div>
+
+    <div>
+      <h5 class="fw-semibold mt-4">Delivery</h5>
+      <ol>
+        <li>Explore our menu and add your favorite dishes to your cart.</li>
+        <li>Specify any special instructions or dietary preferences.</li>
+        <li>Enter your delivery address and contact details.</li>
+        <li>Select your preferred delivery time or choose 'ASAP'.</li>
+        <li>Choose your payment method and complete the transaction.</li>
+        <li>Track your order in real-time and receive your delicious meal at your doorstep.</li>
+      </ol>
+    </div>
+
+    <div class="mt-5">
+      <h5 class="fw-semibold">Order Details</h5>
+      <form class="mt-3">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Delivery Address</label>
+          <input type="text" class="form-control" id="address" placeholder="Enter your delivery address">
+        </div>
+        <div class="mb-3">
+          <label for="additionalInfo" class="form-label">Additional Information</label>
+          <textarea class="form-control" id="additionalInfo" rows="4" placeholder="Enter any special instructions or notes..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+</body>
+</html>
