@@ -18,52 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      .star-rating .bi-star-fill {
-        color: red;
-      }
-      .progress-bar {
-        background-color: red;
-      }
-      .review-card {
-        border-bottom: 1px solid #eee;
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-      .review-card:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-      .review-avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-      .review-rating i {
-        color: red;
-      }
-      .review-footer i {
-        color: red;
-      }
-      footer {
-        background-color: #f8f9fa;
-        border-top: 1px solid #ddd;
-        padding: 20px 0;
-      }
-      footer p {
-        margin: 0;
-        font-size: 14px;
-        color: #6c757d;
-      }
-      footer a {
-        color: #dc3545;
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/reviews.css" />
   </head>
   <body>
     <!-- Start Navigation Bar -->
@@ -79,7 +34,21 @@
           />
           <i class="bi bi-caret-right-fill"></i> The Golden Spoon
         </a>
-        <div class="collapse navbar-collapse justify-content-end">
+
+        <!-- Add Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-dark fw-medium" href="#">Menu</a>
@@ -94,7 +63,7 @@
               <a class="nav-link text-dark fw-medium" href="#">About Us</a>
             </li>
           </ul>
-          <a class="btn btn-danger ms-3" href="#">Order Now</a>
+          <a class="btn btn-danger ms-lg-3 mt-2 mt-lg-0" href="#">Order Now</a>
         </div>
       </div>
     </nav>
