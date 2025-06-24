@@ -42,3 +42,27 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+  .review-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .review-card {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .review-footer {
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .btn-danger {
+    width: 100%;
+  }
+}
