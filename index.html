@@ -1,199 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Gilded Fork - Fine Dining Experience</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3 text-dark" href="#">The Gilded Fork</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold mx-2" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold mx-2" href="#reservations">Reservations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold mx-2" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold mx-2" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-danger ms-3 px-4 rounded-pill">Order Online</button>
-                    </li>
-                </ul>
-            </div>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <!-- Start Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#">
+          <img
+            src="/assets/reviews/resort.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          <i class="bi bi-caret-right-fill"></i> The Golden Spoon
+        </a>
+
+        <!-- Add Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/reviews.html"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-medium"
+                href="/pages/contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn btn-danger ms-lg-3 mt-2 mt-lg-0"
+            href="/pages/order.html"
+            >Order Now</a
+          >
         </div>
+      </div>
     </nav>
-    <section class="hero-bg text-white position-relative" style="margin-top: 76px; min-height: 70vh;">
-        <div class="container position-relative h-100 d-flex align-items-center justify-content-center">
-            <div class="text-center py-5"> 
-                <h1 class="display-2 fw-bold mb-4">Welcome to The Gilded Fork</h1>
-                <p class="lead fs-4 mb-5 mx-auto" style="max-width: 600px;">
-                    Experience culinary artistry in a warm, inviting atmosphere. Our menu features innovative dishes crafted with the freshest ingredients, promising an unforgettable dining experience.
-                </p>
-                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
-                    <button class="btn btn-danger btn-lg px-5 rounded-pill">Browse Menu</button>
-                    <button class="btn btn-outline-light btn-lg px-5 rounded-pill">Make a Reservation</button>
-                </div>
-            </div>
+    <!-- End Navigation Bar -->
+    <section
+      class="hero-bg text-white position-relative"
+      style="margin-top: 0px; min-height: 50vh"
+    >
+      <div
+        class="container position-relative h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="text-center py-5">
+          <h1 class="display-2 fw-bold mb-4">Welcome to The Golden Spoon</h1>
+          <p class="lead fs-4 mb-5 mx-auto" style="max-width: 600px">
+            Experience culinary artistry in a warm, inviting atmosphere. Our
+            menu features innovative dishes crafted with the freshest
+            ingredients, promising an unforgettable dining experience.
+          </p>
+          <div
+            class="d-flex flex-column flex-md-row gap-3 justify-content-center"
+          >
+            <button class="btn btn-danger btn-lg px-5 rounded-pill">
+              Browse Menu
+            </button>
+            <button class="btn btn-outline-light btn-lg px-5 rounded-pill">
+              Make a Reservation
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="py-5 bg-light" id="menu">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold text-dark mb-3">Featured Dishes</h2>
-                <div class="bg-warning mx-auto" style="height: 4px; width: 100px;"></div>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Pasta Primavera -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-lg border-0 rounded-3">
-                        <div class="position-relative">
-                            <img src="/assets/images/pasta.png" 
-                                 class="card-img-top dish-image" alt="Pasta Primavera">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"></div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h3 class="card-title fw-bold text-dark mb-3">Pasta Primavera</h3>
-                            <p class="card-text text-muted lh-lg">
-                                A vibrant mix of seasonal vegetables and perfectly cooked pasta, tossed in our signature herb-infused olive oil and finished with aged parmesan.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <span class="fw-bold text-danger fs-5">$18.99</span>
-                                <a href="/pages/order.html"><button class="btn btn-outline-danger btn-sm">Add to Order</button></a>   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Grilled Salmon -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-lg border-0 rounded-3">
-                        <div class="position-relative">
-                            <img src="/assets/images/grilled-salmon.png" 
-                                 class="card-img-top dish-image" alt="Grilled Salmon with Asparagus">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"></div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h3 class="card-title fw-bold text-dark mb-3">Grilled Salmon with Asparagus</h3>
-                            <p class="card-text text-muted lh-lg">
-                                Freshly grilled salmon served with a side of tender asparagus, drizzled with lemon butter sauce and garnished with fresh herbs.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <span class="fw-bold text-danger fs-5">$24.99</span>
-                                <a href="/pages/order.html"><button class="btn btn-outline-danger btn-sm">Add to Order</button></a>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chocolate Lava Cake -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 shadow-lg border-0 rounded-3">
-                        <div class="position-relative">
-                            <img src="/assets/images/lava-cake.png" 
-                                 class="card-img-top dish-image" alt="Chocolate Lava Cake">
-                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"></div>
-                        </div>
-                        <div class="card-body p-4">
-                            <h3 class="card-title fw-bold text-dark mb-3">Decadent Chocolate Lava Cake</h3>
-                            <p class="card-text text-muted lh-lg">
-                                Warm chocolate cake with a gooey center, served with a tangy raspberry sauce and a dollop of vanilla ice cream.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-                                <span class="fw-bold text-danger fs-5">$12.99</span>
-                                <a href="/pages/order.html"><button class="btn btn-outline-danger btn-sm">Add to Order</button></a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-4 fw-bold text-dark mb-3">Featured Dishes</h2>
+          <div
+            class="bg-warning mx-auto"
+            style="height: 4px; width: 100px"
+          ></div>
         </div>
+
+        <div class="row g-4">
+          <!-- Pasta Primavera -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-lg border-0 rounded-3">
+              <div class="position-relative">
+                <img
+                  src="/assets/images/pasta.png"
+                  class="card-img-top dish-image"
+                  alt="Pasta Primavera"
+                />
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"
+                ></div>
+              </div>
+              <div class="card-body p-4">
+                <h3 class="card-title fw-bold text-dark mb-3">
+                  Pasta Primavera
+                </h3>
+                <p class="card-text text-muted lh-lg">
+                  A vibrant mix of seasonal vegetables and perfectly cooked
+                  pasta, tossed in our signature herb-infused olive oil and
+                  finished with aged parmesan.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fw-bold text-danger fs-5">$18.99</span>
+                  <a href="/pages/order.html"
+                    ><button class="btn btn-outline-danger btn-sm">
+                      Add to Order
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grilled Salmon -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-lg border-0 rounded-3">
+              <div class="position-relative">
+                <img
+                  src="/assets/images/grilled-salmon.png"
+                  class="card-img-top dish-image"
+                  alt="Grilled Salmon with Asparagus"
+                />
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"
+                ></div>
+              </div>
+              <div class="card-body p-4">
+                <h3 class="card-title fw-bold text-dark mb-3">
+                  Grilled Salmon with Asparagus
+                </h3>
+                <p class="card-text text-muted lh-lg">
+                  Freshly grilled salmon served with a side of tender asparagus,
+                  drizzled with lemon butter sauce and garnished with fresh
+                  herbs.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fw-bold text-danger fs-5">$24.99</span>
+                  <a href="/pages/order.html"
+                    ><button class="btn btn-outline-danger btn-sm">
+                      Add to Order
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chocolate Lava Cake -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-lg border-0 rounded-3">
+              <div class="position-relative">
+                <img
+                  src="/assets/images/lava-cake.png"
+                  class="card-img-top dish-image"
+                  alt="Chocolate Lava Cake"
+                />
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25 rounded-top"
+                ></div>
+              </div>
+              <div class="card-body p-4">
+                <h3 class="card-title fw-bold text-dark mb-3">
+                  Decadent Chocolate Lava Cake
+                </h3>
+                <p class="card-text text-muted lh-lg">
+                  Warm chocolate cake with a gooey center, served with a tangy
+                  raspberry sauce and a dollop of vanilla ice cream.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <span class="fw-bold text-danger fs-5">$12.99</span>
+                  <a href="/pages/order.html"
+                    ><button class="btn btn-outline-danger btn-sm">
+                      Add to Order
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="py-5 bg-white" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="rounded-3 overflow-hidden shadow-lg">
-                        <img src="/assets/images/about-section.png" 
-                             class="img-fluid" alt="Professional Kitchen" style="height: 400px; width: 100%; object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ps-lg-5 mt-4 mt-lg-0">
-                        <h2 class="display-5 fw-bold text-dark mb-4">About The Gilded Fork</h2>
-                        <p class="lead text-muted mb-4">
-                            Founded with a passion for exceptional cuisine, The Gilded Fork brings together traditional cooking techniques with modern innovation.
-                        </p>
-                        <p class="text-muted lh-lg mb-4">
-                            Our experienced chefs source only the finest ingredients to create memorable dining experiences. From intimate dinners to special celebrations, we're committed to exceeding your expectations.
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="rounded-3 overflow-hidden shadow-lg">
+              <img
+                src="/assets/images/about-section.png"
+                class="img-fluid"
+                alt="Professional Kitchen"
+                style="height: 400px; width: 100%; object-fit: cover"
+              />
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ps-lg-5 mt-4 mt-lg-0">
+              <h2 class="display-5 fw-bold text-dark mb-4">
+                About The Golden Spoon
+              </h2>
+              <p class="lead text-muted mb-4">
+                Founded with a passion for exceptional cuisine, The Golden Spoon
+                brings together traditional cooking techniques with modern
+                innovation.
+              </p>
+              <p class="text-muted lh-lg mb-4">
+                Our experienced chefs source only the finest ingredients to
+                create memorable dining experiences. From intimate dinners to
+                special celebrations, we're committed to exceeding your
+                expectations.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="fw-bold mb-3">The Gilded Fork</h3>
-                    <p class="text-light opacity-75 mb-4">
-                        Experience fine dining at its best. We're committed to providing exceptional cuisine and unforgettable moments.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="fab fa-yelp"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 mt-4 mt-lg-0">
-                    <h5 class="fw-bold mb-3">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
-                        <li class="mb-2"><a href="#reservations" class="text-light text-decoration-none">Reservations</a></li>
-                        <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About Us</a></li>
-                        <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 mt-4 mt-lg-0">
-                    <h5 class="fw-bold mb-3">Newsletter</h5>
-                    <p class="text-light opacity-75 mb-3">Subscribe for special offers and updates</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Your email">
-                        <button class="btn btn-danger" type="button">Subscribe</button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-3">The Golden Spoon</h3>
+            <p class="text-light opacity-75 mb-4">
+              Experience fine dining at its best. We're committed to providing
+              exceptional cuisine and unforgettable moments.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white fs-4"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white fs-4"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-4"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white fs-4"
+                ><i class="fab fa-yelp"></i
+              ></a>
             </div>
-            
-            <hr class="my-4 opacity-25">
-            
-            <div class="text-center">
-                <p class="mb-0 text-light opacity-75">
-                    &copy; 2024 The Gilded Fork. All rights reserved.
-                </p>
+          </div>
+
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="/pages/menu.html"
+                  class="text-light text-decoration-none"
+                  >Menu</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="/pages/reviews.html"
+                  class="text-light text-decoration-none"
+                  >Riviews</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="/pages/gallery.html"
+                  class="text-light text-decoration-none"
+                  >Gallery</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="/pages/contactUs.html"
+                  class="text-light text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <h5 class="fw-bold mb-3">Newsletter</h5>
+            <p class="text-light opacity-75 mb-3">
+              Subscribe for special offers and updates
+            </p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+              />
+              <button class="btn btn-danger" type="button">Subscribe</button>
             </div>
+          </div>
         </div>
+
+        <hr class="my-4 opacity-25" />
+
+        <div class="text-center">
+          <p class="mb-0 text-light opacity-75">
+            &copy; 2025 The Golden Spoon. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>   
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
