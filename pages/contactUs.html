@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="mb-4">
+        We’d love to hear from you! Whether you have a question about our menu,
+        want to make a reservation, or just want to say hello, please don’t
+        hesitate to reach out.
+      </p>
+
+      <h6><strong>Our Location</strong></h6>
+      <img src="/assets/images/map.png" alt="Map" class="map-image" />
+
+      <div class="row mb-5">
+        <div class="col-md-6 contact-info">
+          <p><span>Address</span><br />Galle, Sri Lanka</p>
+        </div>
+        <div class="col-md-6 contact-info">
+          <p><span>Phone</span><br />+94 123 4567 22</p>
+        </div>
+        <div class="col-md-6 contact-info">
+          <p><span>Email</span><br />info@thebistro.com</p>
+        </div>
+      </div>
+
+      <h6><strong>Send Us a Message</strong></h6>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
