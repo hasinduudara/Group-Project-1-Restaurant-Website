@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Golden Spoon</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #ffffff; 
+            color: #222;
+            padding-top: 100px;
+        }
+
+        .section-title {
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .menu-item img {
+            width: 220px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .menu-item-title {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+
+        .menu-item-desc {
+            color: #7a4c4c; 
+            font-size: 0.95rem;
+        }
+
+        .nav-link {
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #7a4c4c;
+            border-bottom: 2px solid #7a4c4c;
+        }
+      
+        .search-bar {
+             background-color: #f9eaea;
+             border: none;
+             border-radius: 6px;
+             padding: 12px 20px;
+             font-size: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">The Gilded Fork</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h2 class="section-title">Our Menu</h2>
+
+    <div class="position-relative mb-4">
+        <input type="text" class="form-control search-bar ps-5" placeholder="Search for dishes...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#7a4c4c" class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3" viewBox="0 0 16 16">
+             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.242 1.397a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+        </svg>
+    </div>
+        <h3 class="section-title">Appetizers</h3>
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Bruschetta</div>
+                <div class="menu-item-desc">Toasted bread topped with fresh tomatoes, basil, and balsamic glaze.</div>
+            </div>
+            <img src="your_image_path_here" alt="Bruschetta">
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Stuffed Mushrooms</div>
+                <div class="menu-item-desc">Mushrooms stuffed with a blend of cheeses, herbs, and breadcrumbs.</div>
+            </div>
+            <img src="your_image_path_here" alt="Stuffed Mushrooms">
+        </div>
+        <h3 class="section-title">Main Courses</h3>
+
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Grilled Salmon</div>
+                <div class="menu-item-desc">Fresh Atlantic salmon, grilled to perfection, served with asparagus and lemon-dill sauce.</div>
+            </div>
+            <img src="your_image_path_here" alt="Grilled Salmon">
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Filet Mignon</div>
+                <div class="menu-item-desc">A tender 8oz filet mignon, cooked to your preference, served with mashed potatoes and red wine reduction.</div>
+            </div>
+            <img src="your_image_path_here" alt="Filet Mignon">
+        </div>
+
+        <h3 class="section-title">Desserts</h3>
+
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Chocolate Lava Cake</div>
+                <div class="menu-item-desc">Warm chocolate cake with a molten chocolate center, served with vanilla bean ice cream.</div>
+            </div>
+            <img src="your_image_path_here" alt="Chocolate Lava Cake">
+        </div>
+
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Cheesecake</div>
+                <div class="menu-item-desc">Classic New York-style cheesecake with a graham cracker crust, topped with fresh berries.</div>
+            </div>
+            <img src="your_image_path_here" alt="Cheesecake">
+        </div>
+
+        <h3 class="section-title">Drinks</h3>
+
+        <div class="menu-item">
+            <div>
+                <div class="menu-item-title">House Red Wine</div>
+                <div class="menu-item-desc">A full-bodied red wine with notes of cherry and oak.</div>
+            </div>
+            <img src="your_image_path_here" alt="House Red Wine">
+        </div>
+
+               <div class="menu-item">
+            <div>
+                <div class="menu-item-title">Iced Tea</div>
+                <div class="menu-item-desc">Freshly brewed iced tea, served with lemon.</div>
+            </div>
+            <img src="your_image_path_here" alt="Iced Tea">
+        </div>
+
+    </div> 
+
+    <!--optional -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
