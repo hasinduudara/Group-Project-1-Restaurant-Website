@@ -11,27 +11,87 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-...your integrity here..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .star-rating .bi-star-fill {
+        color: red;
+      }
+      .progress-bar {
+        background-color: red;
+      }
+      .review-card {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .review-card:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      .review-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .review-rating i {
+        color: red;
+      }
+      .review-footer i {
+        color: red;
+      }
+      footer {
+        background-color: #f8f9fa;
+        border-top: 1px solid #ddd;
+        padding: 20px 0;
+      }
+      footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #6c757d;
+      }
+      footer a {
+        color: #dc3545;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     <!-- Start Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom px-4">
       <div class="container-fluid">
         <a class="navbar-brand fw-semibold" href="#">
+          <img
+            src="/assets/reviews/resort.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
           <i class="bi bi-caret-right-fill"></i> The Golden Spoon
         </a>
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link text-dark fw-medium" href="#">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Order Online</a>
+              <a class="nav-link text-dark fw-medium" href="#">Order Online</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reservations</a>
+              <a class="nav-link text-dark fw-medium" href="#">Reservations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link text-dark fw-medium" href="#">About Us</a>
             </li>
           </ul>
           <a class="btn btn-danger ms-3" href="#">Order Now</a>
@@ -39,6 +99,296 @@
       </div>
     </nav>
     <!-- End Navigation Bar -->
+
+    <!-- Start Customet Reviews Reting Section -->
+    <div class="container my-5">
+      <div class="bg-white p-4" style="max-width: 700px">
+        <div class="row">
+          <!-- Rating Left -->
+          <div id="rating-left" class="col-md-5">
+            <h5 class="fw-bold mb-2">Customer Reviews</h5>
+
+            <h2 class="fw-bold mb-2" style="color: red">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </h2>
+
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3">
+                <h2 class="fw-bold mb-0">4.6</h2>
+                <small class="text-muted">235 reviews</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rating Right -->
+          <div id="rating-right" class="col-md-7">
+            <div class="mt-2">
+              <!-- Progress bars -->
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">5</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">50%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">4</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 30%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">30%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">3</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 10%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">10%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">2</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 5%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">5%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">1</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 5%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">5%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Customer Reviews Rating Section -->
+
+    <!-- Start Reviews -->
+    <div class="container my-2 mt-0">
+      <div class="bg-white p-4">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="d-flex align-items-center mb-2">
+            <img
+              src="https://i.pravatar.cc/40?img=1"
+              alt="Avatar"
+              class="review-avatar me-2"
+            />
+            <div>
+              <h6 class="mb-0 fw-bold">Sophia Carter</h6>
+              <small class="text-muted">1 month ago</small>
+            </div>
+          </div>
+          <div class="review-rating mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            The Golden Spoon is a culinary gem! The ambiance is warm and
+            inviting, and the food is simply divine. I highly recommend the
+            grilled salmon and the chocolate lava cake. The service was
+            impeccable, and our server, Mark, was attentive and friendly. We'll
+            definitely be back!
+          </p>
+          <div class="review-footer d-flex gap-3">
+            <span><i class="fa-regular fa-thumbs-up"></i> 12</span>
+            <span><i class="fa-regular fa-comment"></i> 2</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="d-flex align-items-center mb-2">
+            <img
+              src="https://i.pravatar.cc/40?img=2"
+              alt="Avatar"
+              class="review-avatar me-2"
+            />
+            <div>
+              <h6 class="mb-0 fw-bold">Ethan Bennett</h6>
+              <small class="text-muted">2 months ago</small>
+            </div>
+          </div>
+          <div class="review-rating mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>
+            I had a pleasant dining experience at The Golden Spoon. The food was
+            good, especially the pasta dishes, but the service was a bit slow.
+            The atmosphere was nice, though it could get a little noisy.
+            Overall, it's a solid choice for a casual dinner.
+          </p>
+          <div class="review-footer d-flex gap-3">
+            <span><i class="fa-regular fa-thumbs-up"></i> 8</span>
+            <span><i class="fa-regular fa-comment"></i> 1</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="d-flex align-items-center mb-2">
+            <img
+              src="https://i.pravatar.cc/40?img=3"
+              alt="Avatar"
+              class="review-avatar me-2"
+            />
+            <div>
+              <h6 class="mb-0 fw-bold">Olivia Hayes</h6>
+              <small class="text-muted">3 months ago</small>
+            </div>
+          </div>
+          <div class="review-rating mb-2">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            The Golden Spoon exceeded all my expectations! From the moment we
+            walked in, we were treated like royalty. The staff was incredibly
+            friendly and accommodating, and the food was out of this world. The
+            steak was cooked to perfection, and the wine selection was
+            impressive. This is a must-visit for any food lover!
+          </p>
+          <div class="review-footer d-flex gap-3">
+            <span><i class="fa-regular fa-thumbs-up"></i> 15</span>
+            <span><i class="fa-regular fa-comment"></i> 3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Reviews -->
+
+    <!-- Start submit reviews -->
+    <hr class="my-5" />
+
+    <div
+      class="p-4 rounded shadow-sm bg-white"
+      style="max-width: 700px; margin: auto"
+    >
+      <h4 class="mb-4 fw-bold text-center text-danger" style="color: red">
+        Submit Your Review
+      </h4>
+
+      <form>
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label fw-medium">Your Name</label>
+          <input
+            type="text"
+            class="form-control rounded-3 shadow-sm"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <!-- Star Rating -->
+        <div class="mb-3">
+          <label class="form-label fw-medium">Your Rating</label>
+          <div id="rating" class="d-flex gap-2 fs-4">
+            <i
+              class="fa-regular fa-star text-muted"
+              role="button"
+              data-value="1"
+            ></i>
+            <i
+              class="fa-regular fa-star text-muted"
+              role="button"
+              data-value="2"
+            ></i>
+            <i
+              class="fa-regular fa-star text-muted"
+              role="button"
+              data-value="3"
+            ></i>
+            <i
+              class="fa-regular fa-star text-muted"
+              role="button"
+              data-value="4"
+            ></i>
+            <i
+              class="fa-regular fa-star text-muted"
+              role="button"
+              data-value="5"
+            ></i>
+          </div>
+          <input type="hidden" id="ratingValue" name="rating" value="0" />
+        </div>
+
+        <!-- Review Text -->
+        <div class="mb-3">
+          <label for="comment" class="form-label fw-medium">Your Review</label>
+          <textarea
+            class="form-control rounded-3 shadow-sm"
+            id="comment"
+            rows="4"
+            placeholder="Write your review here..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button
+            type="submit"
+            class="btn btn-danger px-4 rounded-pill shadow-sm"
+            style="background-color: red"
+          >
+            <i class="fa-solid fa-paper-plane me-2"></i>Submit Review
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- End submit reviews -->
+
+    <!-- Start Footer -->
+    <footer class="bg-light py-4 border-top">
+      <div class="container text-center">
+        <p class="mb-0 text-muted">
+          &copy; 2025 The Golden Spoon. All rights reserved.
+        </p>
+        <p class="mb-0">
+          <a href="#" class="text-danger text-decoration-none"
+            >Privacy Policy</a
+          >
+          |
+          <a href="#" class="text-danger text-decoration-none"
+            >Terms of Service</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="/Js/reviews.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
