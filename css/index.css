@@ -1,0 +1,25 @@
+.hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/home-section.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.card-img-overlay {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+.dish-image {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.card:hover .dish-image {
+    transform: scale(1.05);
+}
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
