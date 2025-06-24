@@ -20,10 +20,10 @@
     />
     <style>
       .star-rating .bi-star-fill {
-        color: #dc3545;
+        color: red;
       }
       .progress-bar {
-        background-color: #dc3545;
+        background-color: red;
       }
     </style>
   </head>
@@ -64,85 +64,93 @@
 
     <!-- Start Customet Reviews Reting Section -->
     <div class="container my-5">
-      <div class="bg-white p-4 rounded shadow-sm" style="max-width: 400px">
-        <h5 class="fw-bold mb-2">Customer Reviews</h5>
+      <div class="bg-white p-4" style="max-width: 700px">
+        <div class="row">
+          <!-- Rating Left -->
+          <div id="rating-left" class="col-md-5">
+            <h5 class="fw-bold mb-2">Customer Reviews</h5>
 
-        <h2 class="fw-bold mb-2" style="color: red">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </h2>
+            <h2 class="fw-bold mb-2" style="color: red">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </h2>
 
-        <div class="d-flex align-items-center mb-2">
-          <div class="me-3">
-            <h2 class="fw-bold mb-0">4.6</h2>
-            <div class="star-rating mb-1">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
+            <div class="d-flex align-items-center mb-2">
+              <div class="me-3">
+                <h2 class="fw-bold mb-0">4.6</h2>
+                <div class="star-rating mb-1">
+                  <i class="fa-solid fa-star text-danger"></i>
+                  <i class="fa-solid fa-star text-danger"></i>
+                  <i class="fa-solid fa-star text-danger"></i>
+                  <i class="fa-solid fa-star text-danger"></i>
+                  <i class="fa-regular fa-star text-danger"></i>
+                </div>
+                <small class="text-muted">235 reviews</small>
+              </div>
             </div>
-            <small class="text-muted">235 reviews</small>
           </div>
-        </div>
 
-        <!-- Ratings Breakdown -->
-        <div class="mt-3">
-          <div class="d-flex align-items-center mb-2">
-            <div class="me-2" style="width: 20px">5</div>
-            <div class="progress w-100" style="height: 8px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 50%"
-              ></div>
+          <!-- Rating Right -->
+          <div id="rating-right" class="col-md-7">
+            <div class="mt-2">
+              <!-- Progress bars -->
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">5</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">50%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">4</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 30%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">30%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">3</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 10%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">10%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">2</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 5%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">5%</div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="me-2" style="width: 20px">1</div>
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 5%"
+                  ></div>
+                </div>
+                <div class="ms-2 text-muted small">5%</div>
+              </div>
             </div>
-            <div class="ms-2 text-muted small">50%</div>
-          </div>
-          <div class="d-flex align-items-center mb-2">
-            <div class="me-2" style="width: 20px">4</div>
-            <div class="progress w-100" style="height: 8px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 30%"
-              ></div>
-            </div>
-            <div class="ms-2 text-muted small">30%</div>
-          </div>
-          <div class="d-flex align-items-center mb-2">
-            <div class="me-2" style="width: 20px">3</div>
-            <div class="progress w-100" style="height: 8px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 10%"
-              ></div>
-            </div>
-            <div class="ms-2 text-muted small">10%</div>
-          </div>
-          <div class="d-flex align-items-center mb-2">
-            <div class="me-2" style="width: 20px">2</div>
-            <div class="progress w-100" style="height: 8px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 5%"
-              ></div>
-            </div>
-            <div class="ms-2 text-muted small">5%</div>
-          </div>
-          <div class="d-flex align-items-center mb-2">
-            <div class="me-2" style="width: 20px">1</div>
-            <div class="progress w-100" style="height: 8px">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 5%"
-              ></div>
-            </div>
-            <div class="ms-2 text-muted small">5%</div>
           </div>
         </div>
       </div>
