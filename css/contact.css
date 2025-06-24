@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefafa;
+  padding: 2rem;
+}
+h2 {
+  font-weight: bold;
+}
+.section-title {
+  margin-bottom: 1rem;
+}
+.contact-info span {
+  font-weight: 600;
+  color: #d63384;
+}
+.form-control::placeholder {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.btn-danger {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+.btn-danger:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+.map-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
