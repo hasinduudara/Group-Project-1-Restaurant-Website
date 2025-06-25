@@ -9,9 +9,71 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="/assets/reviews/resort.png" />
   </head>
   <body>
-    <div class="container">
+    <!-- Start Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#">
+          <img
+            src="/assets/reviews/resort.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          <i class="bi bi-caret-right-fill"></i> The Golden Spoon
+        </a>
+
+        <!-- Add Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/reviews.html"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="/pages/gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-medium"
+                href="/pages/contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn btn-danger ms-lg-3 mt-2 mt-lg-0"
+            href="/pages/order.html"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+    <div class="container mt-4">
       <h2 class="section-title">Contact Us</h2>
       <p class="mb-4">
         We’d love to hear from you! Whether you have a question about our menu,
@@ -19,7 +81,7 @@
         hesitate to reach out.
       </p>
 
-      <h6><strong>Our Location</strong></h6>
+      <h4><strong>Our Location</strong></h4>
       <img src="/assets/images/map.png" alt="Map" class="map-image" />
 
       <div class="row mb-5">
@@ -66,5 +128,24 @@
         <button type="submit" class="btn btn-danger">Send Message</button>
       </form>
     </div>
+
+    <!-- Start Footer -->
+    <footer class="bg-light py-4 border-top">
+      <div class="container text-center">
+        <p class="mb-0 text-muted">
+          &copy; 2025 The Golden Spoon. All rights reserved.
+        </p>
+        <p class="mb-0">
+          <a href="#" class="text-danger text-decoration-none"
+            >Privacy Policy</a
+          >
+          |
+          <a href="#" class="text-danger text-decoration-none"
+            >Terms of Service</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>
