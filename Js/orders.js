@@ -1,3 +1,4 @@
+
         // Toggle between takeout and delivery forms
         document.getElementById('takeout').addEventListener('change', function() {
             document.getElementById('takeoutForm').classList.add('active');
@@ -37,3 +38,4 @@
             document.querySelector('tfoot tr:nth-child(2) th:nth-child(2)').textContent = '$' + tax.toFixed(2);
             document.querySelector('tfoot tr:nth-child(3) th:nth-child(2)').textContent = '$' + total.toFixed(2);
         }
+
