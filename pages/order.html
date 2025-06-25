@@ -1,9 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Orders</title>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="icon" href="/assets/reviews/resort.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-...your integrity here..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .form-section {
+        display: none;
+      }
+      .form-section.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#">
+          <img
+            src="/assets/reviews/resort.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          <i class="bi bi-caret-right-fill"></i> The Golden Spoon
+        </a>
+
+        <!-- Add Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="#">Order Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="#">Reservations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-medium" href="#">About Us</a>
+            </li>
+          </ul>
+          <a class="btn btn-danger ms-lg-3 mt-2 mt-lg-0" href="#">Order Now</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Start Orders Section -->
+    <div class="container py-5">
+      <h1 class="text-center mb-5">How to Order</h1>
+
+      <div class="row">
+        <!-- Takeout Column -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-primary text-white">
+              <h2 class="h4 mb-0">Takeout</h2>
+            </div>
+            <div class="card-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Browse our online menu and select your desired items.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Customize your order with any special requests or
+                    modifications.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Proceed to checkout and provide your contact information.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Choose your preferred pickup time.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Complete your payment securely online.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Pick up your order at the designated time and enjoy!
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery Column -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-header bg-success text-white">
+              <h2 class="h4 mb-0">Delivery</h2>
+            </div>
+            <div class="card-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Explore our menu and add your favorite dishes to your cart.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Specify any special instructions or dietary preferences.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Enter your delivery address and contact details.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Select your preferred delivery time or choose ASAP*.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Choose your payment method and complete the transaction.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-start">
+                  <div class="ms-2 me-auto">
+                    Track your order in real-time and receive your delicious
+                    meal at your doorstep.
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Orders Section -->
+
+    <!-- Start Order Form -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h2 class="h4 mb-0">
+                <i class="bi bi-cart"></i> Place Your Order
+              </h2>
+            </div>
+            <div class="card-body">
+              <!-- Order Type Selection -->
+              <div class="mb-4 text-center">
+                <h3 class="h5 mb-3">Select Order Type</h3>
+                <div class="btn-group w-100" role="group">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="orderType"
+                    id="takeout"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label class="btn btn-outline-primary" for="takeout">
+                    <i class="bi bi-bag"></i> Takeout
+                  </label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="orderType"
+                    id="delivery"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-success" for="delivery">
+                    <i class="bi bi-truck"></i> Delivery
+                  </label>
+                </div>
+              </div>
+
+              <!-- Menu Selection -->
+              <div class="mb-4">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-menu-button"></i> Menu Items
+                </h3>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th width="50%">Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <strong>Margherita Pizza</strong>
+                          <div class="form-check mt-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="extraCheese"
+                            />
+                            <label class="form-check-label" for="extraCheese">
+                              Extra Cheese (+$1.50)
+                            </label>
+                          </div>
+                        </td>
+                        <td>$12.99</td>
+                        <td>
+                          <select class="form-select form-select-sm">
+                            <option>0</option>
+                            <option selected>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </td>
+                        <td>$12.99</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>Caesar Salad</strong>
+                          <div class="form-check mt-2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="addChicken"
+                            />
+                            <label class="form-check-label" for="addChicken">
+                              Add Chicken (+$3.00)
+                            </label>
+                          </div>
+                        </td>
+                        <td>$8.99</td>
+                        <td>
+                          <select class="form-select form-select-sm">
+                            <option>0</option>
+                            <option>1</option>
+                            <option selected>2</option>
+                            <option>3</option>
+                          </select>
+                        </td>
+                        <td>$17.98</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Garlic Bread</strong></td>
+                        <td>$4.50</td>
+                        <td>
+                          <select class="form-select form-select-sm">
+                            <option selected>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </td>
+                        <td>$0.00</td>
+                      </tr>
+                    </tbody>
+                    <tfoot class="table-secondary">
+                      <tr>
+                        <th colspan="3">Subtotal</th>
+                        <th>$30.97</th>
+                      </tr>
+                      <tr>
+                        <th colspan="3">Tax (8%)</th>
+                        <th>$2.48</th>
+                      </tr>
+                      <tr class="table-active">
+                        <th colspan="3">Total</th>
+                        <th>$33.45</th>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Special Instructions -->
+              <div class="mb-4">
+                <label for="instructions" class="form-label"
+                  ><i class="bi bi-pencil"></i> Special Instructions</label
+                >
+                <textarea
+                  class="form-control"
+                  id="instructions"
+                  rows="2"
+                  placeholder="Any allergies, dietary restrictions, or special requests..."
+                ></textarea>
+              </div>
+
+              <!-- Takeout Form -->
+              <div id="takeoutForm" class="form-section active">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-person"></i> Pickup Information
+                </h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="pickupName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pickupName"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="pickupPhone" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="pickupPhone"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="pickupTime" class="form-label"
+                      >Pickup Time</label
+                    >
+                    <select class="form-select" id="pickupTime" required>
+                      <option value="" selected disabled>
+                        Select pickup time
+                      </option>
+                      <option>ASAP (15-20 minutes)</option>
+                      <option>11:00 AM</option>
+                      <option>11:30 AM</option>
+                      <option>12:00 PM</option>
+                      <option>12:30 PM</option>
+                      <option>1:00 PM</option>
+                      <option>1:30 PM</option>
+                      <option>2:00 PM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Delivery Form -->
+              <div id="deliveryForm" class="form-section">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-house"></i> Delivery Information
+                </h3>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="deliveryName" class="form-label"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="deliveryName"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="deliveryPhone" class="form-label"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="deliveryPhone"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="deliveryAddress" class="form-label"
+                      >Street Address</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="deliveryAddress"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="deliveryCity" class="form-label">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="deliveryCity"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="deliveryState" class="form-label">State</label>
+                    <select class="form-select" id="deliveryState" required>
+                      <option value="" selected disabled>Select state</option>
+                      <option>CA</option>
+                      <option>NY</option>
+                      <option>TX</option>
+                      <option>FL</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="deliveryZip" class="form-label">ZIP Code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="deliveryZip"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="deliveryTime" class="form-label"
+                      >Delivery Time</label
+                    >
+                    <select class="form-select" id="deliveryTime" required>
+                      <option value="" selected disabled>
+                        Select delivery time
+                      </option>
+                      <option>ASAP (30-45 minutes)</option>
+                      <option>11:00 AM - 11:30 AM</option>
+                      <option>11:30 AM - 12:00 PM</option>
+                      <option>12:00 PM - 12:30 PM</option>
+                      <option>12:30 PM - 1:00 PM</option>
+                      <option>1:00 PM - 1:30 PM</option>
+                      <option>1:30 PM - 2:00 PM</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="alert alert-info">
+                      <i class="bi bi-info-circle"></i> Delivery fee: $3.99
+                      (will be added at checkout)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Payment Information -->
+              <div class="mt-4">
+                <h3 class="h5 mb-3">
+                  <i class="bi bi-credit-card"></i> Payment Method
+                </h3>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="creditCard"
+                        checked
+                      />
+                      <label class="form-check-label" for="creditCard">
+                        Credit/Debit Card
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="paypal"
+                      />
+                      <label class="form-check-label" for="paypal">
+                        PayPal
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="paymentMethod"
+                        id="cash"
+                      />
+                      <label class="form-check-label" for="cash">
+                        Cash (at pickup/delivery)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid mt-4">
+                <button class="btn btn-primary btn-lg" type="submit">
+                  <i class="bi bi-check-circle"></i> Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Order Form -->
+
+    <!-- Start Footer -->
+    <footer class="bg-light py-4 border-top">
+      <div class="container text-center">
+        <p class="mb-0 text-muted">
+          &copy; 2025 The Golden Spoon. All rights reserved.
+        </p>
+        <p class="mb-0">
+          <a href="#" class="text-danger text-decoration-none"
+            >Privacy Policy</a
+          >
+          |
+          <a href="#" class="text-danger text-decoration-none"
+            >Terms of Service</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="/Js/orders.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
