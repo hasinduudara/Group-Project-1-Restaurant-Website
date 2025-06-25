@@ -14,10 +14,10 @@ Our objective was to design and build a visually appealing and responsive websit
 ## 🧑‍💻 Team Members
 
 ● Hasindu Udara  
-● Nethmi Nanayakkara
-● Dulanji Amanda Sathsarani
-● Sachintha Prabashana
-● Chamod Ananda
+● Nethmi Nanayakkara  
+● Dulanji Amanda Sathsarani  
+● Sachintha Prabashana  
+● Chamod Ananda  
 ● Kavindu Avishka
 
 ## 🚀 Technologies & Tools Used
