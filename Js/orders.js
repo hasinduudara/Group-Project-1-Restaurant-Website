@@ -38,4 +38,4 @@
             document.querySelector('tfoot tr:nth-child(2) th:nth-child(2)').textContent = '$' + tax.toFixed(2);
             document.querySelector('tfoot tr:nth-child(3) th:nth-child(2)').textContent = '$' + total.toFixed(2);
         }
-    
+
